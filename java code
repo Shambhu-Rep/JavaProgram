@@ -1,0 +1,42 @@
+
+0 to 100 even number des order
+
+
+for(int i=100;i>=0;i--){
+if(i%2==0){
+System.out.println(i);
+
+}
+
+}
+
+String s="shambhu kumar pashupati";
+
+output= pashupati kumar uhbmash
+
+String res="";
+
+String[] sp=s.split(" ");
+for(int i=sp.length-1;i<=0;i--){
+String s1=sp[i];
+res=res+s1;
+
+}
+String resvname="";
+String[] str=res.split(" ");
+String name = str[str.length-1];
+for(int i=name.length()-1;i>=0;i--){
+char ch=name.chatAt(i);
+resvname=resvname+ch;
+}
+String result=str[0]+" "+str[1]+" "+resvname;
+SOP(result)
+
+
+
+WebDriver driver=new ChromeDriver();
+driver.get("url");
+
+WebElement text=driver.findElement(By.xpath("//span[text()='Popular! Last booked 1 hour ago']"));
+String textValue=text.getText();
+Assert.assertEquals(textValue,"Popular! Last booked 1 hour ago");
